@@ -16,16 +16,34 @@
 
 # print({**dict_2, **dict_1})
 
-count = int(input("How many numbers?\n> "))
-nums = []
+#########################################################################
 
-for idx in range(count):
-    nums.append(float(input(f"enter num {idx + 1} of {count}\n> ")))
+# count = int(input("How many numbers?\n> "))
+# nums = []
 
-def average(*args):
-    total = 0
-    for arg in args:
-        total += arg
-    return round(total / len(args), 2)
+# for idx in range(count):
+#     nums.append(float(input(f"enter num {idx + 1} of {count}\n> ")))
 
-print(average(*nums))
+# def average(*args):
+#     print(args)
+#     total = 0
+#     for arg in args:
+#         total += arg
+#     return round(total / len(args), 2)
+
+# print(average(*nums))
+
+#########################################################################
+
+def student_score(first, last, *score):
+    print(f"{first.capitalize()} {last.capitalize()} scored {score}")
+
+# student_score(input("first\t"), input("last\t"), *[input("score 1\t"),input("score 2\t"),input("score 3\t")])
+student_score("Mary")
+
+
+
+
+
+
+#########################################################################
